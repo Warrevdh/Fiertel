@@ -1,5 +1,13 @@
+# =========================
+# Frontend / Node
+# =========================
+
+node_modules/
+dist/
+dist-ssr/
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,22 +15,68 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# =========================
+# Environment / secrets
+# =========================
 
 .env
 .env.local
 .env.*.local
+
+# Keep example environment files
+!.env.example
+
+
+# =========================
+# .NET / ASP.NET Core
+# =========================
+
+**/bin/
+**/obj/
+
+# User-specific Visual Studio files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache
+.vs/
+
+# Test results / coverage
+TestResults/
+**/TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+
+# =========================
+# IDEs / editors
+# =========================
+
+.vscode/*
+!.vscode/extensions.json
+
+.idea/
+
+*.ntvs*
+*.njsproj
+*.sw?
+
+
+# =========================
+# OS files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# Misc
+# =========================
+
+*.local
