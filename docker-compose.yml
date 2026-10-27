@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: fiertel-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: fiertel
+      POSTGRES_USER: fiertel
+      POSTGRES_PASSWORD: fiertel_dev
+    ports:
+      - "5433:5432"
+    volumes:
+      - fiertel_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  fiertel_postgres_data:
